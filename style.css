@@ -1,0 +1,74 @@
+.bg-card{
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    
+}
+.trail-card{
+    background-color: hsl(248, 32%, 49%);
+    
+}
+.card-con{
+    display: flex;
+}
+.form-con{
+    background-color: #ffff;
+    
+    padding: 15px;
+}
+.claim-btn{
+    background-color: hsl(154, 59%, 51%);
+    border: 0px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    
+}
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+}
+.input::placeholder{
+    
+    font-size: 16px;
+    color: hsl(246, 25%, 77%);
+}
+@media screen and (max-width:750px) {
+    .card-con{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        height: 90vh;
+    }
+    .learn-card{
+        width: 90%;
+        text-align: center;
+    }
+    .trail-card{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:1540px) {
+    .card-con{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    gap: 10%;
+    margin: 0px 15% 0px 15%;
+    }
+    
+    .learn-card{
+        width: 90%;
+        text-align: start;
+    }
+   .card-con2{
+    width: 60%;
+   }
+   
+}
+

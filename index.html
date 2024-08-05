@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container-fluid bg-card d-flex justify-content-center align-items-center"
+    >
+      <div class="card-con">
+        <div
+          class="text-white learn-card d-flex flex-column justify-content-center align-items-center"
+        >
+          
+              <h3 class="" style="font-family: 'Poppins'; font-weight: 900; font-size: 58px;">Learn to code by watching others</h3>
+            <p class="">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+           </p>
+          
+        </div>
+        <div class="card-con2">
+          <div class="down-card">
+            <div
+              class="trail-card text-white py-3 text-center rounded rounded-4 shadow-lg"
+            >
+              <span style="font-weight: bold">Try it free 7 days</span> then
+              $20/mo. thereafter
+            </div>
+            <div style="width:350px;" class="form-con my-3 rounded rounded-4">
+              <form class="p-3">
+                <dd class="mt-3 input-group">
+                  <input
+                    class="input-text form-control  p-2"
+                    placeholder="First Name"
+                    type="text" id="fName"
+                    
+                  />
+                  <img class="d-none position-absolute" src="images/icon-error.svg"/>
+                </dd>
+                <div class="text-end" id="fNameError"></div>
+                <dd class="mt-3">
+                  <input
+                    class="input form-control p-2"
+                    type="text"
+                    placeholder="Last Name"
+                    id="lName"
+                  />
+                </dd>
+                <div class="text-end" id="lNameError"></div>
+                <dd class="mt-3">
+                  <input
+                    class="input form-control p-2"
+                    type="text"
+                    placeholder="Email Address"
+                    id="email"
+                  />
+                  
+                </dd>
+                <div class="text-end" id="emailError"></div>
+                <dd class="mt-3">
+                  <input
+                    class="input form-control p-2"
+                    type="password"
+                    placeholder="Password"
+                    id="password"
+                  />
+                </dd>
+                <div class="text-end" id="passwordError"></div>
+
+                <button type="button" onclick="buttonFun()" class="claim-btn text-white shadow-lg">
+                  Claim your free trial
+                </button>
+                <div class="terms text-center mt-2 mx-3">
+                  By clicking the button, you are agreeing to our
+                  <span class="text-danger">Terms and Services</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
